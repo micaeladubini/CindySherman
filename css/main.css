@@ -7662,7 +7662,7 @@ h3, .h3 {
         .main-header-2 .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(4) {
           transition-delay: 1s; }
         .main-header-2 .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(5) {
-          transition-delay: 1s; }
+          transition-delay: 1.2s; }
     .main-header-2 .menu-btn:checked ~ .menu-icon {
       z-index: 3;
       border-radius: 50%;
