@@ -492,7 +492,7 @@ main {
         h3{
             font-family: 'Quicksand',sans-serif;
             letter-spacing: 6px;
-            color:  #867aaa;
+            color:  #dbdbdb;
             font-size: $fontSize2;
         }
 
@@ -511,14 +511,63 @@ main {
 
 
 /*IG*/
+.main__ig{
+    .main__ig--title{
+        margin-top: 8rem;
+        
+          h1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 1rem;
+            letter-spacing: 2px ;
+          }
+
+          div{
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              padding: 1.5rem 5rem;
+
+
+
+              p{
+                padding: 0 2rem;
+                text-align: justify;
+              }
+          }
+    }
+
+    .main__ig--sub-title{
+      display: flex;
+      margin-top: 4rem;
+      flex-direction: column;
+      margin-bottom: 8rem;
+     
+
+        h2{
+        font-family: 'Montserrat',sans-serif;
+        font-size: 20px; 
+        font-weight: 600;
+        color: #3a3a3a;
+        }
+
+        img{
+            width: 5%;
+            margin-top: 2rem;
+        }
+    }
+
+
 .main__ig--grid{
-    @include grid(grid,20vw 20vw 20vw 20vw,50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 45vh 45vh 45vh 45vh 50vh 50vh 50vh,18px,18px);
+      
+    @include grid(grid,20vw 20vw 20vw 20vw,40vh 50vh 40vh 50vh 50vh 40vh 40vh 40vh 40vh 45vh 45vh 45vh 45vh 40vh 40vh 40vh,18px,18px);
     grid-template-areas: 
-    "image1 image2 . image3 "
-    ". image2 image4 image4"
-    "texto1 texto1 . ."
-    "image7 image7 . ."
-    "image7 image7 image8 image8"
+    "image1 image2 image4 image7 "
+    "image1 image2 image4 image7"
+    ". . image8 image8"
+    ". . . ."
+    ". . . ."
     ". . image9 image9"
     "image10 . image9 image9"
     ". . . ."
@@ -532,7 +581,7 @@ main {
     ". . . .";
     display: grid;
     margin-top: 0%;
-    padding: 5rem;
+    padding: 3rem 5rem 5rem 5rem;
     align-content: center;
     justify-content: center;
     height: 100%;
@@ -581,7 +630,7 @@ main {
      box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
      -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
      -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-     border-radius: 150px 0px 40px 0px;
+     border-radius: 0px 150px 40px 0px;
       
      &:hover {
          background-image:  url('../img/ig1.jpg');
@@ -901,6 +950,8 @@ main {
         
     }
 
+
+}
 
 }
  /*final ig*/

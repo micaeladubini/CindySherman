@@ -7621,7 +7621,7 @@ h3, .h3 {
   -webkit-box-shadow: 9px 12px 12px 0px rgba(151, 151, 151, 0.72);
   -moz-box-shadow: 9px 12px 12px 0px rgba(151, 151, 151, 0.72); }
 
-.main__ig--grid .image1, .main__ig--grid .image2, .main__ig--grid .video, .main__ig--grid .image5, .main__ig--grid .image6, .main__ig--grid .image7, .main__ig--grid .image8, .main__ig--grid .image9, .main__ig--grid .video-2, .main__ig--grid .image11, .main__ig--grid .image12, .main__ig--grid .image13, .main__ig--grid .image14, .main__ig--grid .image15 {
+.main__ig .main__ig--grid .image1, .main__ig .main__ig--grid .image2, .main__ig .main__ig--grid .video, .main__ig .main__ig--grid .image5, .main__ig .main__ig--grid .image6, .main__ig .main__ig--grid .image7, .main__ig .main__ig--grid .image8, .main__ig .main__ig--grid .image9, .main__ig .main__ig--grid .video-2, .main__ig .main__ig--grid .image11, .main__ig .main__ig--grid .image12, .main__ig .main__ig--grid .image13, .main__ig .main__ig--grid .image14, .main__ig .main__ig--grid .image15 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -8601,7 +8601,7 @@ main .main__presentacion {
     .main__gallery .main__gallery--art h3, .main__gallery .main__gallery--art .h3 {
       font-family: 'Quicksand',sans-serif;
       letter-spacing: 6px;
-      color: #867aaa;
+      color: #dbdbdb;
       font-size: 15px; }
     .main__gallery .main__gallery--art p {
       font-size: 14px;
@@ -8613,21 +8613,52 @@ main .main__presentacion {
 
 /*final gallery*/
 /*IG*/
-.main__ig--grid {
+.main__ig .main__ig--title {
+  margin-top: 8rem; }
+  .main__ig .main__ig--title h1, .main__ig .main__ig--title .h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    letter-spacing: 2px; }
+  .main__ig .main__ig--title div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 5rem; }
+    .main__ig .main__ig--title div p {
+      padding: 0 2rem;
+      text-align: justify; }
+
+.main__ig .main__ig--sub-title {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  margin-bottom: 8rem; }
+  .main__ig .main__ig--sub-title h2, .main__ig .main__ig--sub-title .h2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3a3a3a; }
+  .main__ig .main__ig--sub-title img {
+    width: 5%;
+    margin-top: 2rem; }
+
+.main__ig .main__ig--grid {
   display: grid;
   grid-template-columns: 20vw 20vw 20vw 20vw;
-  grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 45vh 45vh 45vh 45vh 50vh 50vh 50vh;
+  grid-template-rows: 40vh 50vh 40vh 50vh 50vh 40vh 40vh 40vh 40vh 45vh 45vh 45vh 45vh 40vh 40vh 40vh;
   column-gap: 18px;
   row-gap: 18px;
-  grid-template-areas: "image1 image2 . image3 " ". image2 image4 image4" "texto1 texto1 . ." "image7 image7 . ." "image7 image7 image8 image8" ". . image9 image9" "image10 . image9 image9" ". . . ." ". texto2 texto2 ." "image11 image12 image13 image14" "image11 image12 image13 image14" ". . . . " ". texto3 texto3 . " ". texto3 texto3 . " ". . . image15 " ". . . .";
+  grid-template-areas: "image1 image2 image4 image7 " "image1 image2 image4 image7" ". . image8 image8" ". . . ." ". . . ." ". . image9 image9" "image10 . image9 image9" ". . . ." ". texto2 texto2 ." "image11 image12 image13 image14" "image11 image12 image13 image14" ". . . . " ". texto3 texto3 . " ". texto3 texto3 . " ". . . image15 " ". . . .";
   display: grid;
   margin-top: 0%;
-  padding: 5rem;
+  padding: 3rem 5rem 5rem 5rem;
   align-content: center;
   justify-content: center;
   height: 100%; }
   @media (min-width: 351px) and (max-width: 516px) {
-    .main__ig--grid {
+    .main__ig .main__ig--grid {
       display: grid;
       grid-template-columns: 40vw 40vw;
       grid-template-rows: 50vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
@@ -8637,7 +8668,7 @@ main .main__presentacion {
       grid-template-areas: "image1 image2" "image3 image4" "image5 image6" "texto1 texto1" "texto2 texto2" "image7 image8" "image9 image10" "image11 image12";
       margin-top: 40px; } }
   @media (min-width: 517px) and (max-width: 768px) {
-    .main__ig--grid {
+    .main__ig .main__ig--grid {
       display: grid;
       grid-template-columns: 40vw 40vw;
       grid-template-rows: 10vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
@@ -8646,25 +8677,25 @@ main .main__presentacion {
       grid-row-gap: 20px;
       grid-template-areas: "image1 image2" "image3 image4" "image5 image6" "texto1 texto1" "texto2 texto2" "image7 image8" "image9 image10" "image11 image12";
       margin-top: 40px; } }
-  .main__ig--grid .image1 {
+  .main__ig .main__ig--grid .image1 {
     grid-area: image1;
     background-image: url("../img/ig1-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
-    border-radius: 150px 0px 40px 0px; }
-    .main__ig--grid .image1:hover {
+    border-radius: 0px 150px 40px 0px; }
+    .main__ig .main__ig--grid .image1:hover {
       background-image: url("../img/ig1.jpg");
       transition: 1.3s; }
     @media (min-width: 351px) and (max-width: 516px) {
-      .main__ig--grid .image1 {
+      .main__ig .main__ig--grid .image1 {
         grid-area: image1;
         background-image: url("../img/ig1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 5px; } }
-  .main__ig--grid .image2 {
+  .main__ig .main__ig--grid .image2 {
     grid-area: image2;
     background-image: url("../img/ig2-byn.jpg");
     background-repeat: no-repeat;
@@ -8672,10 +8703,10 @@ main .main__presentacion {
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 0px 40px 0px 40px; }
-    .main__ig--grid .image2:hover {
+    .main__ig .main__ig--grid .image2:hover {
       background-image: url("../img/ig2.jpg");
       transition: 1.3s; }
-  .main__ig--grid .video {
+  .main__ig .main__ig--grid .video {
     grid-area: image3;
     background-image: url("../img/ig8-byn.jpg");
     overflow: hidden;
@@ -8688,13 +8719,13 @@ main .main__presentacion {
     margin-top: 3.5rem;
     margin-left: 1.5rem;
     width: 16vw; }
-    .main__ig--grid .video:hover {
+    .main__ig .main__ig--grid .video:hover {
       background-image: url("../img/ig8.jpg");
       transition: 1.3s;
       box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
       -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
       -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57); }
-  .main__ig--grid .image4 {
+  .main__ig .main__ig--grid .image4 {
     grid-area: image4;
     background-image: url("../img/ig3-byn.jpg");
     background-repeat: no-repeat;
@@ -8704,52 +8735,52 @@ main .main__presentacion {
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 0px 80px 0px 40px; }
-    .main__ig--grid .image4:hover {
+    .main__ig .main__ig--grid .image4:hover {
       background-image: url("../img/ig3.jpg");
       transition: 1.5s; }
-  .main__ig--grid .image5 {
+  .main__ig .main__ig--grid .image5 {
     grid-area: image5;
     background-image: url("../img/ig5-byn.jpg"); }
-    .main__ig--grid .image5:hover {
+    .main__ig .main__ig--grid .image5:hover {
       background-image: url("../img/ig5.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image6 {
+  .main__ig .main__ig--grid .image6 {
     grid-area: image6;
     background-image: url("../img/ig6-byn.png"); }
-    .main__ig--grid .image6:hover {
+    .main__ig .main__ig--grid .image6:hover {
       background-image: url("../img/ig6.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image7 {
+  .main__ig .main__ig--grid .image7 {
     grid-area: image7;
     background-image: url("../img/ig7-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 0px 150px 0px 40px; }
-    .main__ig--grid .image7:hover {
+    .main__ig .main__ig--grid .image7:hover {
       background-image: url("../img/ig7.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image8 {
+  .main__ig .main__ig--grid .image8 {
     grid-area: image8;
     background-image: url("../img/ig4-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 80px 0px 40px 0px; }
-    .main__ig--grid .image8:hover {
+    .main__ig .main__ig--grid .image8:hover {
       background-image: url("../img/ig4.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image9 {
+  .main__ig .main__ig--grid .image9 {
     grid-area: image9;
     background-image: url("../img/ig9-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 0px 0px 0px 150px; }
-    .main__ig--grid .image9:hover {
+    .main__ig .main__ig--grid .image9:hover {
       background-image: url("../img/ig9.jpg");
       transition: 1.3s; }
-  .main__ig--grid .video-2 {
+  .main__ig .main__ig--grid .video-2 {
     grid-area: image10;
     background-image: url("../img/ig10-byn.jpg");
     overflow: hidden;
@@ -8760,52 +8791,52 @@ main .main__presentacion {
     object-fit: contain;
     height: 35vh;
     width: 16vw; }
-    .main__ig--grid .video-2:hover {
+    .main__ig .main__ig--grid .video-2:hover {
       background-image: url("../img/ig10.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image11 {
+  .main__ig .main__ig--grid .image11 {
     grid-area: image11;
     background-image: url("../img/ig11-byn2.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 40px 0px 0px 40px; }
-    .main__ig--grid .image11:hover {
+    .main__ig .main__ig--grid .image11:hover {
       background-image: url("../img/ig11.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image12 {
+  .main__ig .main__ig--grid .image12 {
     grid-area: image12;
     background-image: url("../img/ig12-byn.jpg"); }
-    .main__ig--grid .image12:hover {
+    .main__ig .main__ig--grid .image12:hover {
       background-image: url("../img/ig12.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image13 {
+  .main__ig .main__ig--grid .image13 {
     grid-area: image13;
     background-image: url("../img/ig12-byn.jpg"); }
-    .main__ig--grid .image13:hover {
+    .main__ig .main__ig--grid .image13:hover {
       background-image: url("../img/ig12.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image14 {
+  .main__ig .main__ig--grid .image14 {
     grid-area: image14;
     background-image: url("../img/ig12-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 0px 40px 40px 0px; }
-    .main__ig--grid .image14:hover {
+    .main__ig .main__ig--grid .image14:hover {
       background-image: url("../img/ig12.jpg");
       transition: 1.3s; }
-  .main__ig--grid .image15 {
+  .main__ig .main__ig--grid .image15 {
     grid-area: image15;
     background-image: url("../img/ig1-byn.jpg");
     box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -webkit-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     -moz-box-shadow: 2px 8px 16px -2px rgba(110, 109, 109, 0.57);
     border-radius: 40px 0px 150px 0px; }
-    .main__ig--grid .image15:hover {
+    .main__ig .main__ig--grid .image15:hover {
       background-image: url("../img/ig1.jpg");
       transition: 1.3s; }
-  .main__ig--grid .texto {
+  .main__ig .main__ig--grid .texto {
     grid-area: texto1;
     justify-self: center;
     align-self: center;
@@ -8817,20 +8848,20 @@ main .main__presentacion {
     margin-bottom: 1rem;
     letter-spacing: 8px; }
     @media (min-width: 351px) and (max-width: 516px) {
-      .main__ig--grid .texto {
+      .main__ig .main__ig--grid .texto {
         grid-area: texto1;
         justify-self: center;
         align-self: center;
         font-size: 14px;
         padding: 0%; } }
     @media (min-width: 517px) and (max-width: 768px) {
-      .main__ig--grid .texto {
+      .main__ig .main__ig--grid .texto {
         grid-area: texto1;
         justify-self: center;
         align-self: center;
         font-size: 14px;
         padding: 0%; } }
-  .main__ig--grid .texto2 {
+  .main__ig .main__ig--grid .texto2 {
     grid-area: texto2;
     justify-self: center;
     align-self: center;
@@ -8838,25 +8869,25 @@ main .main__presentacion {
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column; }
-    .main__ig--grid .texto2 span {
+    .main__ig .main__ig--grid .texto2 span {
       font-family: 'Montserrat',sans-serif;
       font-weight: 700;
       font-size: 2rem; }
     @media (min-width: 351px) and (max-width: 516px) {
-      .main__ig--grid .texto2 {
+      .main__ig .main__ig--grid .texto2 {
         grid-area: texto2;
         justify-self: center;
         align-self: center;
         font-size: 14px;
         padding: 0%; } }
     @media (min-width: 517px) and (max-width: 768px) {
-      .main__ig--grid .texto2 {
+      .main__ig .main__ig--grid .texto2 {
         grid-area: texto2;
         justify-self: center;
         align-self: center;
         font-size: 14px;
         padding: 0%; } }
-  .main__ig--grid .texto3 {
+  .main__ig .main__ig--grid .texto3 {
     grid-area: texto3;
     font-size: 14px;
     border-bottom: 3px #000000;
@@ -8864,10 +8895,10 @@ main .main__presentacion {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 2rem 0 6rem 0; }
-    .main__ig--grid .texto3 .p2 {
+    .main__ig .main__ig--grid .texto3 .p2 {
       display: flex;
       flex-direction: column; }
-      .main__ig--grid .texto3 .p2 span {
+      .main__ig .main__ig--grid .texto3 .p2 span {
         font-family: 'Montserrat',sans-serif;
         font-weight: 700;
         font-size: 2rem;
