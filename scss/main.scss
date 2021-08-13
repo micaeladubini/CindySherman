@@ -1,3 +1,15 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'variables';
+@import 'loop';
+@import 'placeholders';
+@import 'mixins';
+@import 'header-2';
+@import 'header';
+@import 'footer-2';
+@import 'footer';
+
+
+
 main{
     .carousel{   
        padding-top: 15px;
@@ -105,15 +117,6 @@ main{
    
    
    
-   @import "../node_modules/bootstrap/scss/bootstrap";
-   @import 'variables';
-   @import 'loop';
-   @import 'placeholders';
-   @import 'mixins';
-   @import 'header-2';
-   @import 'header';
-   @import 'footer-2';
-   @import 'footer';
 
 
    /*SCROLL*/
@@ -514,7 +517,10 @@ main {
 .main__ig{
     .main__ig--title{
         margin-top: 8rem;
-        
+    
+        @media (min-width: 351px) and (max-width:516px){
+            margin-top: 3rem;
+         }
           h1{
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -528,12 +534,26 @@ main {
               display: flex;
               flex-direction: row;
               padding: 1.5rem 5rem;
-
-
+  
+            @media (min-width: 351px) and (max-width:980px){
+                flex-direction: column;
+                padding: 0;
+             }
 
               p{
-                padding: 0 2rem;
+                padding: 0 2.5rem;
                 text-align: justify;
+
+                @media (min-width: 351px) and (max-width:516px){
+                    padding: 0 2rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                 }
+                 @media (min-width: 517px) and (max-width:980px){
+                    padding: 0 6rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                 }
               }
           }
     }
@@ -542,418 +562,241 @@ main {
       display: flex;
       margin-top: 4rem;
       flex-direction: column;
-      margin-bottom: 8rem;
-     
+      margin-bottom: 6rem;
 
-        h2{
+
+
+        h1{
         font-family: 'Montserrat',sans-serif;
         font-size: 20px; 
         font-weight: 600;
         color: #3a3a3a;
+
+        @media (min-width: 351px) and (max-width:980px){
+            padding: 0 2rem 0 2rem;
+          }
+
         }
 
         img{
             width: 5%;
             margin-top: 2rem;
+
+            @media (min-width: 351px) and (max-width:516px){
+               width: 20%;
+             }
+             @media (min-width: 517px) and (max-width:980px){
+                width: 8%;
+              }
         }
     }
 
 
-.main__ig--grid{
       
-    @include grid(grid,20vw 20vw 20vw 20vw,40vh 50vh 40vh 50vh 50vh 40vh 40vh 40vh 40vh 45vh 45vh 45vh 45vh 40vh 40vh 40vh,18px,18px);
-    grid-template-areas: 
-    "image1 image2 image4 image7 "
-    "image1 image2 image4 image7"
-    ". . image8 image8"
-    ". . . ."
-    ". . . ."
-    ". . image9 image9"
-    "image10 . image9 image9"
-    ". . . ."
-    ". texto2 texto2 ."
-    "image11 image12 image13 image14"
-    "image11 image12 image13 image14"
-    ". . . . "
-    ". texto3 texto3 . "
-    ". texto3 texto3 . "
-    ". . . image15 "
-    ". . . .";
-    display: grid;
-    margin-top: 0%;
-    padding: 3rem 5rem 5rem 5rem;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-
-    
-    @media (min-width: 351px) and (max-width:516px){
-     display: grid;
-     grid-template-columns: 40vw 40vw ;
-     grid-template-rows:  50vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
-     grid-column-gap: 20px;
-     grid-column-gap: 20px;
-     grid-row-gap:20px;
-     grid-template-areas:
-     "image1 image2"
-     "image3 image4"
-     "image5 image6"
-     "texto1 texto1"
-     "texto2 texto2"
-     "image7 image8"
-     "image9 image10"
-     "image11 image12";
-     margin-top: 40px;}
-
-     @media (min-width: 517px) and (max-width:768px){
+    .main__ig--grid{
+        @include grid(grid,20vw 20vw 20vw 20vw,50vh 50vh 50vh 50vh,20px,20px);
+        grid-template-areas: 
+        "image1 image2 image3 image4"
+        "image5 image2 image6 image4"
+        "image7 image8 image9 image10"
+        "image7 image11 image9 image12";
         display: grid;
-        grid-template-columns: 40vw 40vw ;
-        grid-template-rows:  10vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
-        grid-column-gap: 20px;
-        grid-column-gap: 20px;
-        grid-row-gap:20px;
-        grid-template-areas:
-        "image1 image2"
-        "image3 image4"
-        "image5 image6"
-        "texto1 texto1"
-        "texto2 texto2"
-        "image7 image8"
-        "image9 image10"
-        "image11 image12";
-        margin-top: 40px;}
+        margin-top: 0%;
+        padding: 3rem 0 5rem 0;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+
+     
+        @media (min-width: 351px) and (max-width:516px){
+         display: grid;
+         grid-template-columns: 40vw 40vw ;
+         grid-template-rows:  50vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
+         grid-column-gap: 20px;
+         grid-column-gap: 20px;
+         grid-row-gap:20px;
+         grid-template-areas:
+         "image1 image2"
+         "image3 image4"
+         "image5 image6"
+         "texto1 texto1"
+         "texto2 texto2"
+         "image7 image8"
+         "image9 image10"
+         "image11 image12";
+         margin-top: 50px;}
     
-    .image1{ 
-     grid-area: image1;
-     background-image: url('../img/ig1-byn.jpg');
-     @extend %gridPr;
-     box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-     -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-     -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-     border-radius: 0px 150px 40px 0px;
-      
-     &:hover {
-         background-image:  url('../img/ig1.jpg');
-         transition: 1.3s;
-       }
- 
-       @media (min-width: 351px) and (max-width:516px){
- 
+         @media (min-width: 517px) and (max-width:768px){
+            display: grid;
+            grid-template-columns: 40vw 40vw ;
+            grid-template-rows:  50vh 50vh 50vh 4fr 4fr 50vh 50vh 50vh;
+            grid-column-gap: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:20px;
+            grid-template-areas:
+            "image1 image2"
+            "image3 image4"
+            "image5 image6"
+            ". ."
+            ". ."
+            "image7 image8"
+            "image9 image10"
+            "image11 image12";
+            margin-top: 50px;
+         }
+        
+        .image1{ 
          grid-area: image1;
-         background-image: url('../img/ig1.jpg');
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
-         border-radius: 5px;}
-     }
- 
-     .image2 { 
-         grid-area: image2;
-         background-image: url('../img/ig2-byn.jpg');
-         background-repeat: no-repeat;
+         background-image: url('../img/ig1-byn.jpg');
          @extend %gridPr;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 0px 40px 0px 40px;
- 
- 
-         &:hover{
-             background-image: url('../img/ig2.jpg');
-             transition: 1.3s;
-         }
-     }
-     
-     .video { 
-         grid-area: image3;
-         background-image: url('../img/ig8-byn.jpg');
-         @extend %gridPr;
-         overflow: hidden;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 150px;
-         object-fit: contain;
-         height: 35vh;
-         margin-top: 3.5rem;
-         margin-left: 1.5rem;
-         width: 16vw;
-
-         &:hover {
-             background-image:  url('../img/ig8.jpg');
-             transition: 1.3s;
-             box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-             -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-             -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         }
-     }
- 
-     .image4 { 
-         grid-area: image4;
-         background-image: url('../img/ig3-byn.jpg');
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: right;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 0px 80px 0px 40px;
-
-         &:hover {
-             background-image:  url('../img/ig3.jpg');
-             transition: 1.5s;
-         }
-     }
- 
-     .image5 { 
-         grid-area: image5;
-         background-image: url('../img/ig5-byn.jpg');
-         @extend %gridPr;
- 
-         &:hover {
-             background-image:  url('../img/ig5.jpg');
-             transition: 1.3s;
-         }
-     }
- 
-     .image6 { 
-         grid-area: image6;
-         background-image: url('../img/ig6-byn.png');
-         @extend %gridPr;
- 
-         &:hover {
-             background-image:  url('../img/ig6.jpg');
-             transition: 1.3s;
-         }
-     }
- 
-     .image7 { 
-         grid-area: image7;
-         background-image: url('../img/ig7-byn.jpg');
-         @extend %gridPr;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 0px 150px 0px 40px;
-
-         &:hover {
-             background-image:  url('../img/ig7.jpg');
-             transition: 1.3s;
-         }
-     }
- 
- 
-     .image8 { 
-         grid-area: image8;
-         background-image: url('../img/ig4-byn.jpg');
-         @extend %gridPr;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 80px 0px 40px 0px;
- 
-         &:hover {
-             background-image:  url('../img/ig4.jpg');
-             transition: 1.3s;
-         }
-     }
- 
- 
-     .image9 { 
-         grid-area: image9;
-         background-image: url('../img/ig9-byn.jpg');
-         @extend %gridPr;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 0px 0px 0px 150px;
- 
- 
-         &:hover {
-             background-image:  url('../img/ig9.jpg');
-             transition: 1.3s;
-         }
-     }
- 
-     .video-2{ 
-         grid-area: image10;
-         background-image: url('../img/ig10-byn.jpg');
-         @extend %gridPr;
-         overflow: hidden;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 150px;
-         object-fit: contain;
-         height: 35vh;
-         width: 16vw;
- 
-         &:hover {
-             background-image:  url('../img/ig10.jpg');
-             transition: 1.3s;
-         }
-     }
-              
-     .image11 { 
-         grid-area: image11;
-         background-image: url('../img/ig11-byn2.jpg');
-         @extend %gridPr;
-         box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-         border-radius: 40px 0px 0px 40px;
- 
-         &:hover {
-             background-image:  url('../img/ig11.jpg');
-             transition: 1.3s;
-         }
-     }
-     
- 
-     .image12 { 
-         grid-area: image12;
-         background-image: url('../img/ig12-byn.jpg');
-         @extend %gridPr;
- 
-         &:hover {
-             background-image:  url('../img/ig12.jpg');
-             transition: 1.3s;
-         }
-     }
-
-     .image13 { 
-        grid-area: image13;
-        background-image: url('../img/ig12-byn.jpg');
-        @extend %gridPr;
-
-        &:hover {
-            background-image:  url('../img/ig12.jpg');
-            transition: 1.3s;
-        }
-    }
-
-    .image14 { 
-        grid-area: image14;
-        background-image: url('../img/ig12-byn.jpg');
-        @extend %gridPr;
-        box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        border-radius: 0px 40px 40px 0px;
-
-        &:hover {
-            background-image:  url('../img/ig12.jpg');
-            transition: 1.3s;
-        }
-    }
-
-    .image15 { 
-        grid-area: image15;
-        background-image: url('../img/ig1-byn.jpg');
-        @extend %gridPr;
-        box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        -webkit-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        -moz-box-shadow: 2px 8px 16px -2px rgba(110,109,109,0.57);
-        border-radius: 40px 0px 150px 0px;
-         
-        &:hover {
-            background-image:  url('../img/ig1.jpg');
-            transition: 1.3s;
-          }
           
-        }
-
-
-     .texto {
-         grid-area: texto1;
-         justify-self: center;
-         align-self: center;
-         font-size: $fontSize1 + 1px;
-         border-bottom: 3px $black;
-         font-family: 'Montserrat', sans-serif;
-         font-weight: 700;
-         font-size: 20px;
-         margin-bottom: 1rem;
-         letter-spacing: 8px ;
-        
-    
- 
-         @media (min-width: 351px) and (max-width:516px){
-            
-                 grid-area: texto1;
-                 justify-self: center;
-                 align-self: center;
-                 font-size: $fontSize1 + 1px;
-                 padding: 0%;}
-         @media (min-width: 517px) and (max-width:768px){
-            grid-area: texto1;
-            justify-self: center;
-            align-self: center;
-            font-size: $fontSize1 + 1px;
-            padding: 0%;}
-         
-     }
+         &:hover {
+             background-image:  url('../img/ig1.jpg');
+             transition: 1.3s;
+           }
      
- 
-    .texto2 {
-         grid-area: texto2;
-         justify-self: center;
-         align-self: center;
-         font-size: $fontSize1 + 1px;
-         padding-bottom: 5rem;
-         display: flex;
-         flex-direction: column;
-
-         span{
-             font-family: 'Montserrat',sans-serif;
-             font-weight: 700;
-             font-size: 2rem;
+           @media (min-width: 351px) and (max-width:516px){
+     
+             grid-area: image1;
+             background-image: url('../img/ig1.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+             border-radius: 5px;
+             }
          }
- 
-         @media (min-width: 351px) and (max-width:516px){
+     
+         .image2 { 
+             grid-area: image2;
+             background-image: url('../img/ig2-byn.jpg');
+             background-repeat: no-repeat;
+             @extend %gridPr;
+     
+     
+             &:hover{
+                 background-image: url('../img/ig2.jpg');
+                 transition: 1.3s;
+             }
+         }
          
-            grid-area: texto2;
-            justify-self: center;
-            align-self: center;
-            font-size: $fontSize1 + 1px;
-            padding: 0%;}
-         @media (min-width: 517px) and (max-width:768px){
-            grid-area: texto2;
-            justify-self: center;
-            align-self: center;
-            font-size: $fontSize1 + 1px;
-            padding: 0%;}
+         .image3 { 
+             grid-area: image3;
+             background-image: url('../img/ig8-byn.jpg');
+             @extend %gridPr;
+             &:hover {
+                 background-image:  url('../img/ig8.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+         .image4 { 
+             grid-area: image4;
+             background-image: url('../img/ig3-byn.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: right;
+             border-radius: 5px;
+     
+             &:hover {
+                 background-image:  url('../img/ig3.jpg');
+                 transition: 1.5s;
+             }
+         }
+     
+         .image5 { 
+             grid-area: image5;
+             background-image: url('../img/ig5-byn.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig5.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+         .image6 { 
+             grid-area: image6;
+             background-image: url('../img/ig6-byn.png');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig6.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+         .image7 { 
+             grid-area: image7;
+             background-image: url('../img/ig7-byn.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig7.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+     
+         .image8 { 
+             grid-area: image8;
+             background-image: url('../img/ig4-byn.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig4.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+     
+         .image9 { 
+             grid-area: image9;
+             background-image: url('../img/ig9-byn.jpg');
+             @extend %gridPr;
+     
+     
+             &:hover {
+                 background-image:  url('../img/ig9.jpg');
+                 transition: 1.3s;
+             }
+         }
+     
+         .image10{ 
+             grid-area: image10;
+             background-image: url('../img/ig10-byn.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig10.jpg');
+                 transition: 1.3s;
+             }
+         }
+                  
+         .image11 { 
+             grid-area: image11;
+             background-image: url('../img/ig11-byn2.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig11.jpg');
+                 transition: 1.3s;
+             }
+         }
+         
+     
+         .image12 { 
+             grid-area: image12;
+             background-image: url('../img/ig12-byn.jpg');
+             @extend %gridPr;
+     
+             &:hover {
+                 background-image:  url('../img/ig12.jpg');
+                 transition: 1.3s;
+             }
+         }
      }
-
-      .texto3 {
-        grid-area: texto3;
-        font-size: $fontSize1 + 1px;
-        border-bottom: 3px $black;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 2rem 0 6rem 0;
-
-       .p2{
-        display: flex;
-        flex-direction: column;
-
-          span{
-            font-family: 'Montserrat',sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            margin-top: 2rem;
-          }
-
-       }
-        
-        
-    }
-
-
-}
-
-}
+   
+}    
  /*final ig*/
  
 
