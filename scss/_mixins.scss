@@ -1,0 +1,29 @@
+
+@mixin flex($display, $direction, $jst, $al){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jst;
+    align-content: $al;
+}
+
+@mixin flex-box($display, $direction, $jc, $ai){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+@mixin fontFam($font,$we,$text) {
+    font-family: $font;
+    font-weight: $we;
+    text-align: $text;
+}
+
+@mixin grid($display,$columns,$rows,$cGap,$rGap){
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    column-gap: $cGap;
+    row-gap: $rGap;
+}

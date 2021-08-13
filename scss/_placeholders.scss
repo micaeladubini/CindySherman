@@ -1,0 +1,41 @@
+%header_items {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: $fontSize1;
+    text-decoration: none;  
+
+    &:hover {
+        background-color: #ffffff;
+        color: $colorPrincipal;
+        border-radius: 2px;
+        transition: all .4s;
+        list-style: none;
+        text-decoration: none;
+        }
+}
+
+ %fontFamily {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+%fontFam2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+%boxShadow{
+    box-shadow: 9px 12px 12px 0px rgba(151,151,151,0.72);
+    -webkit-box-shadow: 9px 12px 12px 0px rgba(151,151,151,0.72);
+    -moz-box-shadow: 9px 12px 12px 0px rgba(151,151,151,0.72);
+}
+
+%gridPr {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+

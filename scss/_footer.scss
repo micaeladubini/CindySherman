@@ -1,0 +1,119 @@
+/*footer gral*/
+.footer__general{
+    text-align: center;
+    background: $white;
+    color:$gray-200;
+    font-size: $fontSize2;
+    @include flex-box(flex, row-reverse, space-around, none);
+    flex-wrap: nowrap;
+    width: $porcentajeTotal;
+    padding: 0 0 10px 0px;
+
+        
+    @media (min-width: 351px) and (max-width:516px){
+        text-align: center;
+        color:$gray-200;
+        font-size: $fontSize1;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (min-width: 517px) and (max-width:768px){
+        text-align: center;
+        color:$gray-200;
+        font-size: $fontSize1;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+               .footer__redes{
+                   @include flex-box(flex, row, space-around, center);
+                   width: 40%;
+                   text-align: center;
+
+                   @media (min-width: 351px) and (max-width:516px){
+                       flex-wrap: wrap;
+                       width: $porcentajeTotal;
+                       flex-direction: column;
+                   }
+                   @media (min-width: 517px) and (max-width:768px){
+                       flex-wrap: wrap;
+                       width: $porcentajeTotal;
+                       flex-direction: column;
+                   }
+
+                  .footer__redes--text{
+                      color: $gray-200;
+                      font-size: $fontSize2;
+                      @media (min-width: 351px) and (max-width:516px){
+                       color:$gray-200;
+                       font-size: $fontSize2;
+                      }
+                   }
+    
+                  .footer__redes--enlace{
+                     @include flex-box(flex, row, center, none);
+                     
+
+                       .footer__redes--be{
+                          width: 32px;
+                          @media (min-width: 351px) and (max-width:516px){
+                          width: 40px;
+                          }
+                          @media (min-width: 517px) and (max-width:980px){
+                           width: 35px;
+                          }
+                       }
+
+                       .footer__redes--icon{
+                           width: 28px;
+                           @media (min-width: 351px) and (max-width:516px){
+                            width: 35px;
+                           }
+                           @media (min-width: 517px) and (max-width:980px){
+                               width: 30px;
+                           }
+                       }
+                   }
+               }
+
+               .footer__copy{
+                   @include flex-box(flex, row, space-around, center);
+                   text-align: center;
+                   width: 40%;
+
+                   @media (min-width: 351px) and (max-width:516px){
+                       flex-wrap: wrap;
+                       width: $porcentajeTotal;
+                       flex-direction: column;
+                       border:none;
+                       margin-top: 10px;
+                   }
+                   @media (min-width: 517px) and (max-width:768px){
+                       flex-wrap: wrap;
+                       width: $porcentajeTotal;
+                       flex-direction: column;
+                       border:none;
+                       margin-left: 5px;
+                   }
+
+                        h4{
+                            color:$colorPrin2;
+                            font-size: $fontSize2;
+                            margin: 0px;
+                        }
+
+                        a{ 
+                            color: $gray-200;
+                            font-size: $fontSize2;
+                            text-decoration: none;
+                        }
+               }
+
+            .header__frase{
+                align-items: flex-end;
+            }   
+}
+/*final footer gral*/
