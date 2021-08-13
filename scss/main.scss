@@ -23,9 +23,10 @@ main{
        @media (min-width: 517px) and (max-width:750px){
        width: 100vw;
        height: 50vh;  
-       margin-bottom: 270px;
+       margin-bottom: 300px;
        padding-top: 30px;
        }
+       
    
        .carousel-inner{
        height: none;
@@ -42,12 +43,15 @@ main{
            
            .w-100{
                z-index: 0;
-               height: 50vh;
-               @media (min-width: 351px) and (max-width:516px){
+               height: 55vh;
+               @media (min-width: 351px) and (max-width:399px){
                height: 25vh;}
-               
-               @media (min-width: 517px) and (max-width:980px){
-               height: 35vh;
+               @media (min-width: 400px) and (max-width:549px){
+                height: 28vh;}
+               @media (min-width: 550px) and (max-width:750px){
+               height: 40vh;}
+               @media (min-width: 750px) and (max-width:980px){
+                height: 45vh;
             }
            }
            .contenedor__bio{
@@ -107,10 +111,14 @@ main{
    
    .carousel-control-prev, .carousel-control-next{
        height: 55vh;
-       @media (min-width: 351px) and (max-width:516px){
+       @media (min-width: 351px) and (max-width:549px){
            height: 40vh;}
-       @media (min-width: 517px) and (max-width:980px){
-           height: 35vh;}
+       @media (min-width: 550px) and (max-width:695px){
+           height: 50vh;}
+       @media (min-width: 696px) and (max-width:750px){
+            height: 55vh;}
+       @media (min-width: 750px) and (max-width:980px){
+            height: 50vh;}
    }
    }
    }
