@@ -22,7 +22,6 @@
         padding-top: 15px;
       }
 
-      
 
       .carousel-inner {
         height: none;
@@ -111,8 +110,11 @@
         @media (min-width: 768px) and (max-width: 980px){
         height: 60vh;  
         }
-        @media (min-width: 517px) and (max-width: 767px){
-            height: 50vh;  
+        @media (min-width: 600px) and (max-width: 767px){
+            height: 40vh;  
+        }
+        @media (min-width: 517px) and (max-width: 599px){
+            height: 30vh;  
         }
         @media (min-width: 350px) and (max-width: 516px){
             height: 35vh;  
