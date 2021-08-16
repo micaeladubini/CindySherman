@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
-@import "loop";
 @import "placeholders";
 @import "mixins";
 @import "header-3";
@@ -107,6 +106,7 @@
       .carousel-control-prev,
       .carousel-control-next {
         height: 70vh;
+       
         @media (min-width: 768px) and (max-width: 980px){
         height: 60vh;  
         }
@@ -885,6 +885,9 @@ main {
       padding: 20px;
       background: #867aaa;
       margin-top: 8px;
+      box-shadow: 10px 10px 0px -1px #fff;
+      -webkit-box-shadow: 10px 10px 0px -1px #fff;
+      -moz-box-shadow: 10px 10px 0px -1px #fff;
 
       @media (min-width: 351px) and (max-width: 600px) {
         width: 350px;

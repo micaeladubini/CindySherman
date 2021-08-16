@@ -7500,15 +7500,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-h1, .h1 {
-  font-size: 25px; }
-
-h2, .h2 {
-  font-size: 20px; }
-
-h3, .h3 {
-  font-size: 15px; }
-
 .main__error .error__texto h1, .main__error .error__texto .h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -7935,7 +7926,7 @@ h3, .h3 {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  background-color: #5c568f;
+  background-color: #000;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -7951,6 +7942,9 @@ h3, .h3 {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
+  @media (min-width: 350px) and (max-width: 768px) {
+    .main-header {
+      background-size: auto; } }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -9039,7 +9033,10 @@ main .main__presentacion {
       height: 380px;
       padding: 20px;
       background: #867aaa;
-      margin-top: 8px; }
+      margin-top: 8px;
+      box-shadow: 10px 10px 0px -1px #fff;
+      -webkit-box-shadow: 10px 10px 0px -1px #fff;
+      -moz-box-shadow: 10px 10px 0px -1px #fff; }
       @media (min-width: 351px) and (max-width: 600px) {
         .body__contact .main__contact form {
           width: 350px;
