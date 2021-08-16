@@ -1,7 +1,6 @@
 /*footer solo galeria*/
 .footer__gallery{
     text-align: center;
-    background: $black;
     color:$gray-200;
     font-size: $fontSize2;
     @include flex-box(flex, row-reverse, space-around, none);
