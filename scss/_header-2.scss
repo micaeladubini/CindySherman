@@ -7,9 +7,21 @@
   transition: .4s ease-out;
   padding: 15px 0px;
   overflow: hidden;
-  z-index: 1;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 
   
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
 
    .logo--2{
          
@@ -137,6 +149,7 @@
       justify-content: space-between;
       padding-left: 40px;
       padding-right: 45px;
+      z-index: 3;
       
       .menu-icon {
           display: block;

@@ -1,7 +1,7 @@
 {
   "name": "sherman",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina web basada en el estudio de la artista, fotografa y directora cindy sherman, donde se muestra principalmente su arte y colecciones",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

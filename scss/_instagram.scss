@@ -1,8 +1,6 @@
 
-  
   /*IG*/
   .main__ig {
-  
     .main__ig--sub-title {
       display: flex;
       margin-top: 8rem;
@@ -56,7 +54,7 @@
           animation-iteration-count: infinite;
           -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-          z-index: 1;
+          
           
           @-webkit-keyframes fadeIn {
           0% {opacity: 0;}
