@@ -33,6 +33,7 @@
               color: $black;
               &:hover{
                   color: $general;
+                  transition: 1s;
               }
           }
       }

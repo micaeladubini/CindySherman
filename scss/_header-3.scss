@@ -33,6 +33,7 @@
               color: $white;
               &:hover{
                   color: $general;
+                  transition: 1s;
               }
           }
       }
