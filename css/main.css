@@ -8391,13 +8391,17 @@ textarea.form-control-lg {
   z-index: 1;
   transition: .4s ease-out;
   padding: 15px 0px;
-  overflow: hidden;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  overflow: hidden; }
+  @media (min-width: 517px) and (max-width: 768px) {
+    .main-header {
+      background-size: contain; } }
+  .main-header .logo--2 {
+    text-align: center;
+    font-size: 70px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -8410,12 +8414,6 @@ textarea.form-control-lg {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  @media (min-width: 517px) and (max-width: 768px) {
-    .main-header {
-      background-size: contain; } }
-  .main-header .logo--2 {
-    text-align: center;
-    font-size: 70px; }
     .main-header .logo--2 span {
       color: #9d83e9; }
     .main-header .logo--2:hover {
@@ -8429,7 +8427,23 @@ textarea.form-control-lg {
     overflow: hidden;
     display: flex;
     list-style: none;
-    padding: 0px; }
+    padding: 0px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
     .main-header .nav-links .nav-link {
       padding: 3rem 4rem 0rem 0rem; }
       .main-header .nav-links .nav-link a {
