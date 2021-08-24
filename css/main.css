@@ -7870,8 +7870,9 @@ textarea.form-control-lg {
         font-size: 13px; } }
     @media (min-width: 350px) and (max-width: 767px) {
       .main__ig .main__ig--grid .text1 {
-        font-size: 13px;
-        text-align: center; } }
+        font-size: 14px;
+        text-align: center;
+        padding: 0rem; } }
   .main__ig .main__ig--grid .text2 {
     grid-area: text2;
     align-self: center;
@@ -7883,8 +7884,9 @@ textarea.form-control-lg {
         font-size: 13px; } }
     @media (min-width: 350px) and (max-width: 767px) {
       .main__ig .main__ig--grid .text2 {
-        font-size: 13px;
-        text-align: center; } }
+        font-size: 14px;
+        text-align: center;
+        padding: 0rem; } }
 
 .main__ig .top-botton {
   padding-bottom: 4rem;
@@ -7977,7 +7979,8 @@ textarea.form-control-lg {
     .main-header-3 .logo--3 span {
       color: #ffffff; }
       .main-header-3 .logo--3 span:hover {
-        color: #9d83e9; }
+        color: #9d83e9;
+        transition: 1s; }
   .main-header-3 a {
     text-decoration: none;
     color: inherit;
@@ -8192,7 +8195,8 @@ textarea.form-control-lg {
     .main-header-2 .logo--2 span {
       color: #000000; }
       .main-header-2 .logo--2 span:hover {
-        color: #9d83e9; }
+        color: #9d83e9;
+        transition: 1s; }
   .main-header-2 a {
     text-decoration: none;
     color: inherit;
@@ -8652,7 +8656,12 @@ textarea.form-control-lg {
         flex-direction: column; } }
     .footer__gallery .footer__redes .footer__redes--text {
       color: #6e6d6d;
-      font-size: 15px; }
+      font-size: 15px;
+      margin: 0; }
+      @media (min-width: 351px) and (max-width: 516px) {
+        .footer__gallery .footer__redes .footer__redes--text {
+          margin: 1rem;
+          font-size: 17px; } }
     .footer__gallery .footer__redes .footer__redes--enlace {
       display: flex;
       flex-direction: row;
@@ -8738,7 +8747,12 @@ textarea.form-control-lg {
         flex-direction: column; } }
     .footer__general .footer__redes .footer__redes--text {
       color: #6e6d6d;
-      font-size: 15px; }
+      font-size: 15px;
+      margin: 0; }
+      @media (min-width: 351px) and (max-width: 516px) {
+        .footer__general .footer__redes .footer__redes--text {
+          margin: 1rem;
+          font-size: 17px; } }
     .footer__general .footer__redes .footer__redes--enlace {
       display: flex;
       flex-direction: row;
