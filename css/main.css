@@ -7591,7 +7591,16 @@ textarea.form-control-lg {
   grid-template-rows: 45vh 45vh 45vh 45vh 45vh 45vh 45vh 45vh 45vh 45vh;
   column-gap: 25px;
   row-gap: 25px;
-  grid-template-areas: "image5 image20 image1 image4" "image3 image20 image25 image15" "image19 image16 image6 image15" ". title title ." "image14 image14 image2 image12" "image7 image26 image2 image18" "text1 text1 text2 text2" "image8 image22 image11 image13" "image23 image23 image24 image13" "image21 image9 image10 image17";
+  grid-template-areas: "image5 image20 image1 image4"
+ "image3 image20 image25 image15"
+ "image19 image16 image6 image15"
+ ". title title ."
+ "image14 image14 image2 image12"
+ "image7 image26 image2 image18"
+ "text1 text1 text2 text2"
+ "image8 image22 image11 image13"
+ "image23 image23 image24 image13"
+ "image21 image9 image10 image17";
   display: grid;
   margin-top: 0%;
   padding: 3rem 0 5rem 0;
@@ -7630,7 +7639,24 @@ textarea.form-control-lg {
       grid-template-rows: 45vh 45vh 45vh 45vh 45vh 45vh 35vh 45vh 45vh 45vh 35vh 45vh 45vh 35vh 45vh 45vh 45vh 45vh;
       column-gap: 20px;
       row-gap: 20px;
-      grid-template-areas: "image5 image20" "image1 image20" "image4 image10" "image15 image19" "image14 image12" "image14 image16" "title title" "image11 image26" "image7 image6" "image23 image23" "text1 text1" "image17 image2" "image18 image22" "text2 text2" "image13 image21" "image13 image24" "image3 image9" "image25 image8"; } }
+      grid-template-areas: "image5 image20"
+ "image1 image20"
+ "image4 image10"
+ "image15 image19"
+ "image14 image12"
+ "image14 image16"
+ "title title"
+ "image11 image26"
+ "image7 image6"
+ "image23 image23"
+ "text1 text1"
+ "image17 image2"
+ "image18 image22"
+ "text2 text2"
+ "image13 image21"
+ "image13 image24"
+ "image3 image9"
+ "image25 image8"; } }
   @media (min-width: 350px) and (max-width: 516px) {
     .main__ig .main__ig--grid {
       display: grid;
@@ -7870,8 +7896,9 @@ textarea.form-control-lg {
         font-size: 13px; } }
     @media (min-width: 350px) and (max-width: 767px) {
       .main__ig .main__ig--grid .text1 {
-        font-size: 13px;
-        text-align: center; } }
+        font-size: 14px;
+        text-align: center;
+        padding: 0rem; } }
   .main__ig .main__ig--grid .text2 {
     grid-area: text2;
     align-self: center;
@@ -7883,8 +7910,9 @@ textarea.form-control-lg {
         font-size: 13px; } }
     @media (min-width: 350px) and (max-width: 767px) {
       .main__ig .main__ig--grid .text2 {
-        font-size: 13px;
-        text-align: center; } }
+        font-size: 14px;
+        text-align: center;
+        padding: 0rem; } }
 
 .main__ig .top-botton {
   padding-bottom: 4rem;
@@ -8066,7 +8094,8 @@ textarea.form-control-lg {
       font-size: 2rem;
       color: #ffffff;
       background: #000000;
-      transition: opacity .8s .5s, clip-path 1s .5s;
+      transition: opacity .8s .5s,
+ clip-path 1s .5s;
       clip-path: circle(200px at top right); }
       .main-header-3 .nav-links .nav-link {
         padding-left: 40px;
@@ -8283,7 +8312,8 @@ textarea.form-control-lg {
       font-size: 2rem;
       color: #ffffff;
       background: #000000;
-      transition: opacity .8s .5s, clip-path 1s .5s;
+      transition: opacity .8s .5s,
+ clip-path 1s .5s;
       clip-path: circle(200px at top right); }
       .main-header-2 .nav-links .nav-link {
         padding-left: 40px;
@@ -8525,7 +8555,8 @@ textarea.form-control-lg {
       font-size: 2rem;
       color: #ffffff;
       background: #000000;
-      transition: opacity .8s .5s, clip-path 1s .5s;
+      transition: opacity .8s .5s,
+ clip-path 1s .5s;
       clip-path: circle(200px at top right); }
       .main-header .nav-links .nav-link {
         padding-left: 40px;
